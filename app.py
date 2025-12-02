@@ -142,3 +142,10 @@ if submitted:
     st.write(f"**Engagement Level:** {engagement_pred}")
     st.write(f"**CLV Tier:** {clv_pred}")
     st.write(f"**Business Message:** {churn_message}")
+
+st.markdown("---")
+st.markdown(
+    "<p style='text-align: center; color: grey;'>Created by: Group 12 (Prashant Singh, Aekkus Ahuja, Pratik Challani, Anup Bannerjee, Aryan Deori)</p>",
+    unsafe_allow_html=True
+)
+
