@@ -133,7 +133,8 @@
     "# Load Models and Objects\n",
     "# ===========================\n",
     "\n",
-    "MODELS_DIR = r\"C:\\Users\\psngh\\OneDrive\\Desktop\\models\"\n",
+    "import os
+MODELS_DIR = os.path.join(os.path.dirname(__file__), "models")",
     "\n",
     "churn_model = joblib.load(f\"{MODELS_DIR}\\\\churn_model.pkl\")\n",
     "engagement_model = joblib.load(f\"{MODELS_DIR}\\\\engagement_model.pkl\")\n",
