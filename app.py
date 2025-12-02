@@ -1,289 +1,144 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": 1,
-   "id": "05b79345",
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "2025-12-02 18:36:04.613 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:04.615 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.164 \n",
-      "  \u001b[33m\u001b[1mWarning:\u001b[0m to view this Streamlit app on a browser, run it with the following\n",
-      "  command:\n",
-      "\n",
-      "    streamlit run C:\\Users\\psngh\\AppData\\Roaming\\Python\\Python313\\site-packages\\ipykernel_launcher.py [ARGUMENTS]\n",
-      "2025-12-02 18:36:05.165 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.166 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.167 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.168 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.169 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.170 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.170 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.171 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.172 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.173 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.173 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.174 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.175 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.175 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.176 Session state does not function when running a script without `streamlit run`\n",
-      "2025-12-02 18:36:05.177 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.177 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.178 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.179 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.179 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.180 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.181 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.181 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.182 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.183 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.184 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.184 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.185 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.186 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.186 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.187 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.187 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.188 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.189 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.190 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.191 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.192 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.192 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.193 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.194 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.194 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.195 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.196 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.197 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.197 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.198 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.199 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.200 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.200 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.201 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.202 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.202 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.203 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.204 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.204 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.205 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.206 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.207 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.208 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.208 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.210 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.210 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.211 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.212 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.213 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.214 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.214 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.215 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.216 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.216 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.217 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.218 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.218 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.219 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.220 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.220 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.221 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.222 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.222 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.223 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.224 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.225 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.226 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.226 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.227 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.232 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.235 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.239 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.240 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.241 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.241 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.242 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.243 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.244 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.244 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.245 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.246 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.246 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.247 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.248 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-12-02 18:36:05.249 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n"
-     ]
+# app.py
+
+import streamlit as st
+import pandas as pd
+import numpy as np
+import joblib
+import os
+
+# ===========================
+# Load Models and Objects
+# ===========================
+
+BASE_DIR = os.path.dirname(__file__)
+MODELS_DIR = os.path.join(BASE_DIR, "models")
+
+churn_model = joblib.load(os.path.join(MODELS_DIR, "churn_model.pkl"))
+engagement_model = joblib.load(os.path.join(MODELS_DIR, "engagement_model.pkl"))
+clv_model = joblib.load(os.path.join(MODELS_DIR, "clv_model.pkl"))
+
+scaler_churn = joblib.load(os.path.join(MODELS_DIR, "scaler_churn.pkl"))
+scaler_engagement = joblib.load(os.path.join(MODELS_DIR, "scaler_engagement.pkl"))
+scaler_clv = joblib.load(os.path.join(MODELS_DIR, "scaler_clv.pkl"))
+
+feature_columns = joblib.load(os.path.join(MODELS_DIR, "feature_columns.pkl"))
+
+# ===========================
+# Helper Functions
+# ===========================
+
+def preprocess_input(input_df):
+    cat_cols = [
+        "gender", "subscription_type", "region",
+        "device", "payment_method", "favorite_genre"
+    ]
+
+    input_encoded = pd.get_dummies(input_df, columns=cat_cols, drop_first=True)
+
+    # Align exactly with training features
+    input_encoded = input_encoded.reindex(columns=feature_columns, fill_value=0)
+
+    return input_encoded
+
+
+def classify_churn_risk(prob):
+    if prob < 0.40:
+        return "Low Risk", "Customer is stable. Focus on loyalty."
+    elif prob <= 0.70:
+        return "Medium Risk", "Customer requires engagement push."
+    else:
+        return "High Risk", "Immediate retention action needed."
+
+
+# ===========================
+# Streamlit UI
+# ===========================
+
+st.set_page_config(page_title="Netflix Customer Prediction Tool", layout="centered")
+st.title("Netflix Customer Status Prediction")
+st.write("Enter customer details to predict churn risk, engagement level, and CLV tier.")
+
+with st.form("customer_form"):
+    st.header("Enter Customer Details")
+
+    # Numerical Inputs
+    age = st.number_input("Age", min_value=0, max_value=120, value=30)
+    monthly_fee = st.number_input("Monthly Fee", min_value=0.0, value=13.99, format="%.2f")
+    watch_hours = st.number_input("Watch Hours", min_value=0.0, value=10.0, format="%.2f")
+    last_login_days = st.number_input("Last Login Days", min_value=0, value=5)
+    number_of_profiles = st.number_input("Number of Profiles", min_value=1, value=1)
+    avg_watch_time_per_day = st.number_input(
+        "Average Watch Time Per Day", min_value=0.0, value=1.0, format="%.2f"
+    )
+
+    # Dropdown Inputs (MATCH TRAINING DATA)
+    gender = st.selectbox("Gender", ["Female", "Male", "Other"])
+    subscription_type = st.selectbox("Subscription Type", ["Basic", "Standard", "Premium"])
+    region = st.selectbox(
+        "Region",
+        ["Africa", "Asia", "Europe", "North America", "Oceania", "South America"]
+    )
+    device = st.selectbox("Device", ["Laptop", "Mobile", "TV", "Tablet"])
+    payment_method = st.selectbox(
+        "Payment Method",
+        ["Credit Card", "Debit Card", "PayPal", "Crypto", "Gift Card"]
+    )
+    favorite_genre = st.selectbox(
+        "Favorite Genre",
+        ["Action", "Comedy", "Documentary", "Drama", "Horror", "Romance", "Sci-Fi"]
+    )
+
+    submitted = st.form_submit_button("Predict Customer Status")
+
+
+# ===========================
+# Prediction Logic
+# ===========================
+
+if submitted:
+    # Prepare input dataframe
+    input_dict = {
+        "age": [age],
+        "monthly_fee": [monthly_fee],
+        "watch_hours": [watch_hours],
+        "last_login_days": [last_login_days],
+        "number_of_profiles": [number_of_profiles],
+        "avg_watch_time_per_day": [avg_watch_time_per_day],
+        "gender": [gender],
+        "subscription_type": [subscription_type],
+        "region": [region],
+        "device": [device],
+        "payment_method": [payment_method],
+        "favorite_genre": [favorite_genre],
     }
-   ],
-   "source": [
-    "# app.py\n",
-    "\n",
-    "import streamlit as st\n",
-    "import pandas as pd\n",
-    "import numpy as np\n",
-    "import joblib\n",
-    "\n",
-    "# ===========================\n",
-    "# Load Models and Objects\n",
-    "# ===========================\n",
-    "\n",
-    "import os
-MODELS_DIR = os.path.join(os.path.dirname(__file__), "models")",
-    "\n",
-    "churn_model = joblib.load(f\"{MODELS_DIR}\\\\churn_model.pkl\")\n",
-    "engagement_model = joblib.load(f\"{MODELS_DIR}\\\\engagement_model.pkl\")\n",
-    "clv_model = joblib.load(f\"{MODELS_DIR}\\\\clv_model.pkl\")\n",
-    "\n",
-    "scaler_churn = joblib.load(f\"{MODELS_DIR}\\\\scaler_churn.pkl\")\n",
-    "scaler_engagement = joblib.load(f\"{MODELS_DIR}\\\\scaler_engagement.pkl\")\n",
-    "scaler_clv = joblib.load(f\"{MODELS_DIR}\\\\scaler_clv.pkl\")\n",
-    "\n",
-    "feature_columns = joblib.load(f\"{MODELS_DIR}\\\\feature_columns.pkl\")\n",
-    "\n",
-    "# ===========================\n",
-    "# Helper Functions\n",
-    "# ===========================\n",
-    "\n",
-    "def preprocess_input(input_df):\n",
-    "    cat_cols = ['gender', 'subscription_type', 'region',\n",
-    "                'device', 'payment_method', 'favorite_genre']\n",
-    "\n",
-    "    input_encoded = pd.get_dummies(input_df, columns=cat_cols, drop_first=True)\n",
-    "\n",
-    "    # Align exactly with training features\n",
-    "    input_encoded = input_encoded.reindex(columns=feature_columns, fill_value=0)\n",
-    "\n",
-    "    return input_encoded\n",
-    "\n",
-    "\n",
-    "def classify_churn_risk(prob):\n",
-    "    if prob < 0.40:\n",
-    "        return \"Low Risk\", \"Customer is stable. Focus on loyalty.\"\n",
-    "    elif prob <= 0.70:\n",
-    "        return \"Medium Risk\", \"Customer requires engagement push.\"\n",
-    "    else:\n",
-    "        return \"High Risk\", \"Immediate retention action needed.\"\n",
-    "\n",
-    "\n",
-    "# ===========================\n",
-    "# Streamlit UI\n",
-    "# ===========================\n",
-    "\n",
-    "st.set_page_config(page_title=\"Netflix Customer Prediction Tool\", layout=\"centered\")\n",
-    "st.title(\"Netflix Customer Status Prediction\")\n",
-    "st.write(\"Enter customer details to predict churn risk, engagement level, and CLV tier.\")\n",
-    "\n",
-    "with st.form(\"customer_form\"):\n",
-    "    st.header(\"Enter Customer Details\")\n",
-    "\n",
-    "    # Numerical Inputs\n",
-    "    age = st.number_input(\"Age\", min_value=0, max_value=120, value=30)\n",
-    "    monthly_fee = st.number_input(\"Monthly Fee\", min_value=0.0, value=13.99, format=\"%.2f\")\n",
-    "    watch_hours = st.number_input(\"Watch Hours\", min_value=0.0, value=10.0, format=\"%.2f\")\n",
-    "    last_login_days = st.number_input(\"Last Login Days\", min_value=0, value=5)\n",
-    "    number_of_profiles = st.number_input(\"Number of Profiles\", min_value=1, value=1)\n",
-    "    avg_watch_time_per_day = st.number_input(\n",
-    "        \"Average Watch Time Per Day\", min_value=0.0, value=1.0, format=\"%.2f\"\n",
-    "    )\n",
-    "\n",
-    "    # Dropdown Inputs (EXACTLY MATCH TRAINING DATA)\n",
-    "    gender = st.selectbox(\"Gender\", options=[\"Female\", \"Male\", \"Other\"])\n",
-    "    subscription_type = st.selectbox(\"Subscription Type\", options=[\"Basic\", \"Standard\", \"Premium\"])\n",
-    "    region = st.selectbox(\n",
-    "        \"Region\",\n",
-    "        options=[\"Africa\", \"Asia\", \"Europe\", \"North America\", \"Oceania\", \"South America\"]\n",
-    "    )\n",
-    "    device = st.selectbox(\"Device\", options=[\"Laptop\", \"Mobile\", \"TV\", \"Tablet\"])\n",
-    "    payment_method = st.selectbox(\n",
-    "        \"Payment Method\",\n",
-    "        options=[\"Credit Card\", \"Debit Card\", \"PayPal\", \"Crypto\", \"Gift Card\"]\n",
-    "    )\n",
-    "    favorite_genre = st.selectbox(\n",
-    "        \"Favorite Genre\",\n",
-    "        options=[\"Action\", \"Comedy\", \"Documentary\", \"Drama\", \"Horror\", \"Romance\", \"Sci-Fi\"]\n",
-    "    )\n",
-    "\n",
-    "    submitted = st.form_submit_button(\"Predict Customer Status\")\n",
-    "\n",
-    "# ===========================\n",
-    "# Prediction Logic\n",
-    "# ===========================\n",
-    "\n",
-    "if submitted:\n",
-    "    # Prepare input dataframe\n",
-    "    input_dict = {\n",
-    "        \"age\": [age],\n",
-    "        \"monthly_fee\": [monthly_fee],\n",
-    "        \"watch_hours\": [watch_hours],\n",
-    "        \"last_login_days\": [last_login_days],\n",
-    "        \"number_of_profiles\": [number_of_profiles],\n",
-    "        \"avg_watch_time_per_day\": [avg_watch_time_per_day],\n",
-    "        \"gender\": [gender],\n",
-    "        \"subscription_type\": [subscription_type],\n",
-    "        \"region\": [region],\n",
-    "        \"device\": [device],\n",
-    "        \"payment_method\": [payment_method],\n",
-    "        \"favorite_genre\": [favorite_genre],\n",
-    "    }\n",
-    "\n",
-    "    input_df = pd.DataFrame(input_dict)\n",
-    "\n",
-    "    # Feature engineering\n",
-    "    input_df[\"total_charges\"] = input_df[\"watch_hours\"] * input_df[\"monthly_fee\"]\n",
-    "\n",
-    "    # Preprocess input\n",
-    "    processed_df = preprocess_input(input_df)\n",
-    "\n",
-    "    # Apply scalers\n",
-    "    X_churn = scaler_churn.transform(processed_df)\n",
-    "    X_engagement = scaler_engagement.transform(processed_df)\n",
-    "    X_clv = scaler_clv.transform(processed_df)\n",
-    "\n",
-    "    # Predictions\n",
-    "    churn_pred = churn_model.predict(X_churn)[0]\n",
-    "    churn_prob = churn_model.predict_proba(X_churn)[0][1]\n",
-    "\n",
-    "    engagement_pred = engagement_model.predict(X_engagement)[0]\n",
-    "    clv_pred = clv_model.predict(X_clv)[0]\n",
-    "\n",
-    "    # Churn risk classification\n",
-    "    churn_risk, churn_message = classify_churn_risk(churn_prob)\n",
-    "\n",
-    "    # Display results\n",
-    "    st.subheader(\"Prediction Results\")\n",
-    "    st.write(f\"**Churn Probability:** {churn_prob * 100:.2f}%\")\n",
-    "    st.write(f\"**Churn Risk Category:** {churn_risk}\")\n",
-    "    st.write(f\"**Engagement Level:** {engagement_pred}\")\n",
-    "    st.write(f\"**CLV Tier:** {clv_pred}\")\n",
-    "    st.write(f\"**Business Message:** {churn_message}\")\n"
-   ]
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.13.6"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+
+    input_df = pd.DataFrame(input_dict)
+
+    # Feature engineering
+    input_df["total_charges"] = input_df["watch_hours"] * input_df["monthly_fee"]
+
+    # Preprocess input
+    processed_df = preprocess_input(input_df)
+
+    # Apply scalers
+    X_churn = scaler_churn.transform(processed_df)
+    X_engagement = scaler_engagement.transform(processed_df)
+    X_clv = scaler_clv.transform(processed_df)
+
+    # Predictions
+    churn_pred = churn_model.predict(X_churn)[0]
+    churn_prob = churn_model.predict_proba(X_churn)[0][1]
+
+    engagement_pred = engagement_model.predict(X_engagement)[0]
+    clv_pred = clv_model.predict(X_clv)[0]
+
+    # Churn risk classification
+    churn_risk, churn_message = classify_churn_risk(churn_prob)
+
+    # Display results
+    st.subheader("Prediction Results")
+    st.write(f"**Churn Probability:** {churn_prob * 100:.2f}%")
+    st.write(f"**Churn Risk Category:** {churn_risk}")
+    st.write(f"**Engagement Level:** {engagement_pred}")
+    st.write(f"**CLV Tier:** {clv_pred}")
+    st.write(f"**Business Message:** {churn_message}")
